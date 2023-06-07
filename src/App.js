@@ -18,14 +18,14 @@ import myData from './Data/myData';
 // }
 
 function App() {
-  const mainBlock = myData.map(({name,city,position,id})=>{
-    return <Main key={id} name={name} city={city} position={position}/>;
+  const mainBlock = myData.map(({name,city,position,image,id})=>{
+    return <Main key={id} name={name} city={city} position={position} image={image}/>;
   }
   )
   return (
   //  <>
-   <Fragment>
-    <div>
+   <div>
+    <div className='main_container'>
       React Learning
       <h1>
         Sandaruwan Gamage
@@ -48,9 +48,11 @@ function App() {
       }
       )} */}
 
-      {mainBlock}
+      <div className='mainBlock_container'>
+        {mainBlock}
+      </div>
     </div>
-    </Fragment>
+    </div>
   //  </>
     
   );

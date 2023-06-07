@@ -3,7 +3,8 @@ const myData=[
       name:"Mahela",
       city:"Galle",
       position:"SE",
-      id:1231
+      id:1231,
+      image:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mahela_Jayawardene_3.JPG/1200px-Mahela_Jayawardene_3.JPG'
     },
     {
       name:"Sanath",
