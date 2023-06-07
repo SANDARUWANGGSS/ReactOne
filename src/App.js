@@ -1,33 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import Main from './Components/Main';
+import myData from './Data/myData';
 
-const myData=[
-  {
-    name:"Mahela",
-    city:"Galle",
-    position:"SE",
-    id:1231
-  },
-  {
-    name:"Sanath",
-    city:"Matara",
-    position:"ASE",
-    id:1232
-  },
-  {
-    name:"Sanga",
-    city:"Kandy",
-    position:"SE",
-    id:1233
-  },
-  {
-    name:"Malinga",
-    city:"Galle",
-    position:"SSE",
-    id:1234
-  }
-]
 function App() {
   return (
    <>
