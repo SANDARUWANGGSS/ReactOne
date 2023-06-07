@@ -1,11 +1,30 @@
 // import logo from './logo.svg';
+import { Fragment } from 'react';
 import './App.css';
 import Main from './Components/Main';
 import myData from './Data/myData';
 
+// const NewBlock =()=>
+// {
+//   return(<>
+//   {
+//     myData.map(({name,city,position,id})=>{
+//       return <Main key={id} name={name} city={city} position={position}/>;
+//     }
+//     )
+//   }
+//   </>
+//   )
+// }
+
 function App() {
+  const mainBlock = myData.map(({name,city,position,id})=>{
+    return <Main key={id} name={name} city={city} position={position}/>;
+  }
+  )
   return (
-   <>
+  //  <>
+   <Fragment>
     <div>
       React Learning
       <h1>
@@ -24,12 +43,15 @@ function App() {
       } */}
 
       {/* using index */}
-      {myData.map(({name,city,position,id})=>{
+      {/* {myData.map(({name,city,position,id})=>{
         return <Main key={id} name={name} city={city} position={position}/>;
       }
-      )}
+      )} */}
+
+      {mainBlock}
     </div>
-   </>
+    </Fragment>
+  //  </>
     
   );
 }
